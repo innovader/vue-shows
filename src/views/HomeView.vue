@@ -1,9 +1,6 @@
 <template>
   <div>
     <h1 class="title">TV shows</h1>
-    <div class="search-bar">
-      <input v-model="searchInputData" placeholder="🔎 search a show"/>
-    </div>
     <div v-for="[key, category] of Object.entries(filteredShows)" :key="key">
       <h2>{{ key }}</h2>
       <swiper
@@ -47,8 +44,6 @@ export default {
     return {
       tvShows: null,
       filteredShows: [],
-      sortedShowsByRating: [],
-      searchInputData: "",
     };
   },
   methods: {

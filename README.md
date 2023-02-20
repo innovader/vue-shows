@@ -1,7 +1,11 @@
 # vue-shows
-
+A simple Vue app with Vue router, created with Vue CLI.
+The home page shows a few horizontal lists(sliders) with shows.
+When the user clicks a show, it goes to the show details page.
 ## Project setup
 ```
+git clone https://github.com/innovader/vue-shows.git
+cd vue-shows
 npm install
 ```
 
